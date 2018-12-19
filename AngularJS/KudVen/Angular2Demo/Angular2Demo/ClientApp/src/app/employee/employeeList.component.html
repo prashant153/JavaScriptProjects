@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <td>Code</td>
+      <td>Name</td>
+      <td>Gender</td>
+      <td>Annual Salary</td>
+      <td>Date Of Birth</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <td>{{emp.code}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.gender}}</td>
+      <td>{{emp.annualSalary}}</td>
+      <td>{{emp.dateOfBirth}}</td>
+    </tr>
+    <tr *ngIf=" !employees || employees.length==0">
+      <td colspan="5"> No employees to display </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<button (click)="getEmployees" >Refresh List</button>
