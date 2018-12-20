@@ -11,6 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee/employeeList.component';
+import { EmployeeListWithNestComponent } from './employee/employeeListWithNest.component';
+import { EmployeeCountComponent } from './employee/employeeCount.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EmployeeListComponent } from './employee/employeeList.component';
     CounterComponent,
     FetchDataComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EmployeeListWithNestComponent,
+    EmployeeCountComponent
     
   ],
   imports: [
@@ -32,7 +36,9 @@ import { EmployeeListComponent } from './employee/employeeList.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'my-employee', component: EmployeeComponent },
-      { path: 'list-employee', component: EmployeeListComponent}
+      { path: 'list-employee', component: EmployeeListComponent},
+      { path: 'list-employee-with-nest', component: EmployeeListWithNestComponent},
+      { path: 'employee-count', component: EmployeeCountComponent},
     ])
   ],
   providers: [],

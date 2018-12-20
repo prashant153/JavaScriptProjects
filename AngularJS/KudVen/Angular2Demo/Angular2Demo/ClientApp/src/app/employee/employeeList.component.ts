@@ -28,4 +28,7 @@ export class EmployeeListComponent {
     ];
 
   }
+  trackByEmpCode(index: number, employee: any): string {
+    return employee.code;
+  }
 }

@@ -24,10 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\employee\employeeCount.component.ts" />
     <None Remove="ClientApp\src\app\employee\employeeList.component.ts" />
+    <None Remove="ClientApp\src\app\employee\employeeListWithNest.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\employee\employeeCount.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\employee\employeeListWithNest.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\employee\employeeList.component.ts" />
   </ItemGroup>
 

@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let emp of employees">
+    <tr *ngFor="let emp of employees; trackBy:trackByEmpCode">
       <td>{{emp.code}}</td>
       <td>{{emp.name}}</td>
       <td>{{emp.gender}}</td>
@@ -22,4 +22,4 @@
   </tbody>
 </table>
 <br />
-<button (click)="getEmployees" >Refresh List</button>
+<button (click)="getEmployees()" >Refresh List</button>
